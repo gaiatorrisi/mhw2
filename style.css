@@ -1,0 +1,71 @@
+/*GRIGILIA*/
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: blanchedalmond;
+}
+.choice-grid div{
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    width: 32.5%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.choice-grid img{
+    width: 100%;
+    margin: 10px 10px;
+}
+/*Specifiche per risposte selezionate e non:*/
+.choice-grid div.azzurro{
+  background-color:#cfe3ff;
+}
+.trasparenza{
+  opacity:0.6;
+}
+/*Specifiche per il container di testo + tasto reset */
+.nascondi{
+  display: none;
+  padding: 20px;
+  margin: 30px 30px;
+}
+/*TASTO RESET:*/
+#reset_button{
+    background-color:#cecece;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#reset_button:hover{
+    background-color:#e0e0e0;
+}
+/*TESTO*/
+.test_result{
+  padding: 20px;
+  margin: 40px 20px;
+}
+.test_result h1{
+  margin: 0;
+}
+.test_result p{
+  margin:18px 18px;
+}
+/*MODALITA' MOBILE:*/
+@media (max-width: 700px) {
+  header div span{
+      display: none;
+  }
+
+  article{
+      width: 95%;
+  } 
+}
+@media (max-width: 500px) {
+    .choice-grid div{
+        width: 49%;
+    }
+  }
